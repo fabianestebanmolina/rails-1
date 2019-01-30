@@ -1,0 +1,9 @@
+<%= form_with model: @todos, local: true do |form| %>
+
+<%= form.label :description, 'Add' %>
+<%= form.text_field :description %>
+
+
+
+<%= form.submit 'Update'%>
+<% end %>

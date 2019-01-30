@@ -1,0 +1,9 @@
+<%= form_with model: @todos, local: true do |form| %>
+
+<%= form.label :description, 'Add' %>
+<%= form.text_field :description %>
+
+
+<%= form.check_box :completed,:style => 'visibility: hidden' %>
+<%= form.submit 'create'%>
+<% end %>

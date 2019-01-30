@@ -1,0 +1,18 @@
+
+<div class="container">
+  <div class="row">
+   <div class="col-md-6">
+      <div class="well">
+        <%  @todos.each do |todo| %>
+          <h1> <%=  todo.description%> </h1>
+          <p> <%= todo.completed %></p>
+          <p> <%= link_to 'Borrar', todo, method: :delete,  class:'btn btn-primary' %> </p>
+          <%= link_to 'editar', todoss_path(todo.id) , class: 'btn btn-info'%>
+          <%= link_to 'Show', todo, class:'btn btn-warning' %>
+          <%= link_to 'completed', todoh_path(todo.id), class: 'btn btn-info' %>
+
+        <% end %>
+      </div>
+    </div>
+  </div>
+</div>

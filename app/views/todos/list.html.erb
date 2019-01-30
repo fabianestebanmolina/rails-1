@@ -1,0 +1,24 @@
+
+<div class="jumbotron">
+  <h1> list </h1>
+</div>
+
+
+<div class="row">
+
+
+<div class="col-sm-6">
+  <h1>LISTA1</h1>
+  <p> <% @completed.each do |f|%> </p>
+   <%= f.description %>
+   <% end %>
+</div>
+
+
+<div class="col-sm-6">
+  <h1>LISTA2</h1>
+  <p> <% @incompleted.each do |f|%> </p>
+   <%= f.description %>
+   <% end %>
+</div>
+</div>

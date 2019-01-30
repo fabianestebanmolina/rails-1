@@ -1,0 +1,5 @@
+<h1> <%= @todos.description %> </h1>
+
+<p> <%=  @todos.completed %> </p>
+
+<p> creado hace <%= time_ago_in_words @todos.created_at %> </p>
