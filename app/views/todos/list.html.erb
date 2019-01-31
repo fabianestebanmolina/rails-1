@@ -1,24 +1,23 @@
 
-<div class="jumbotron">
-  <h1> list </h1>
+<div class="row">
+    <div class="col-sm-12">
+      <h1>LISTADO DE COMPLETADO Y NO COMPLETADO</h1>
+    </div>
 </div>
-
 
 <div class="row">
+  <div class="col-sm-6">
+    <h1>COMPLETADO</h1>
+    <p> <% @completed.each do |f|%> </p>
+     <%= f.description %>
+     <% end %>
+  </div>
 
 
-<div class="col-sm-6">
-  <h1>LISTA1</h1>
-  <p> <% @completed.each do |f|%> </p>
-   <%= f.description %>
-   <% end %>
-</div>
-
-
-<div class="col-sm-6">
-  <h1>LISTA2</h1>
-  <p> <% @incompleted.each do |f|%> </p>
-   <%= f.description %>
-   <% end %>
-</div>
+  <div class="col-sm-6">
+    <h1>NO COMPLETADO</h1>
+    <p> <% @incompleted.each do |f|%> </p>
+     <%= f.description %>
+     <% end %>
+  </div>
 </div>
